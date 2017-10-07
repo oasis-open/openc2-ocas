@@ -53,8 +53,6 @@ Ocas is being developed in Erlang because:
 
 ### 2.1 License
 
-&copy; 2016 sFractal Consulting
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -74,7 +72,7 @@ TL;DR - Don't be a jerk!
 To make sure there are no barriers to ocas development
 for any developers who want to get involved,
 a Code of Conduct was adopted and can be found at
-[code_of_conduct.md](docs/code_of_conduct.md).
+[code_of_conduct.md](./code_of_conduct.md).
 Please read and ahere to it.
 This Code of Conduct is adapted from the Contributor Covenant,
 version 1.4.0, available at
@@ -298,7 +296,7 @@ the processes are actually spun up (albeit they only do a simple keepalive).
 
 ### 5.6 More on software design
 
-See [README.md in apps/ocas/src](./apps/ocas/src/README.md) for more on the software design
+See [README.md in apps/ocas/src](../apps/ocas/src/README.md) for more on the software design
 including a sunny day walk thru the modules/functions.
 
 ## 6. Development Status
@@ -306,7 +304,7 @@ including a sunny day walk thru the modules/functions.
 Development status will attempt to be explained using test status.
 Tests that pass show functioning code.
 Work to be done is shown thru tests that are incomplete, non-existent, or failing.
-See [dev_test_status.md](docs/dev_test_status.md) for current status from test viewpoint.
+See [dev_test_status.md](./dev_test_status.md) for current status from test viewpoint.
 
 Another way to look at development status is 
 from the viewpoint of how much flesh is put on the architectural bones.
@@ -326,4 +324,3 @@ put stuff here
 
 Find a bug? or something missing? or something dumb? Want to complete more features? If yes to any of these then create an issue. Or ideally send a pull request with the changes you'd like.
 
-## 10. Bill can finally contribute
