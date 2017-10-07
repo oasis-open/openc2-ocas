@@ -30,6 +30,8 @@
 <div><h2><a id="purposeClarifications">Additions to Statement of Purpose</a></h2>
 
 <p>Repository Maintainers may include here any clarifications &mdash; any additional sections, subsections, and paragraphs that the Maintainer(s) wish to add as descriptive text, reflecting (sub-) project status, milestones, releases, modifications to statement of purpose, etc.  The project Maintainers will create and maintain this content on behalf of the participants.</p>
+
+<p>See [docs/README.md](docs/README.md) for an explanation of this project and the organization of this repository.</p>
 </div>
 
 <div>
