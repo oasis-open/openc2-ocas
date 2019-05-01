@@ -32,7 +32,7 @@
 <p>Repository Maintainers may include here any clarifications &mdash; any additional sections, subsections, and paragraphs that the Maintainer(s) wish to add as descriptive text, reflecting (sub-) project status, milestones, releases, modifications to statement of purpose, etc.  The project Maintainers will create and maintain this content on behalf of the participants.</p>
 </div>
 
-See [docs/README.md](docs/README.md) for an explanation of this project and the organization of this repository.
+See [docs/README.md](docs/README.md) for an explanation of this project and the organization of this repository. This repo is currently for an older version of the OpenC2 Language Specification. It is in the process of being updated to the CSPRD02 (4-Apr-2019) of the Language Specification.
 
 <div>
 <h2><a id="maintainers">Maintainers</a></h2>
