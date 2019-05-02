@@ -1,8 +1,7 @@
 {
-"action": "mitigate",
+"action": "deny",
 "target": {
     "type":"cybox:hostname",
     "specifiers":{"hostname_value":"cdn.badco.org"}
     }
 }
-

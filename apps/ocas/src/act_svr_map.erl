@@ -46,18 +46,14 @@
 -spec action_map( ) -> map().
 action_map() ->
     ActionMap = #{ <<"allow">> => act_allow
-                 , <<"augment">> => act_augment
                  , <<"cancel">> => act_cancel
                  , <<"contain">> => act_contain
                  , <<"copy">> => act_copy
-                 , <<"delay">> => act_delay
                  , <<"delete">> => act_delete
                  , <<"deny">> => act_deny
                  , <<"detonate">> => act_detonate
-                 , <<"distill">> => act_distill
                  , <<"investigate">> => act_investigate
                  , <<"locate">> => act_locate
-                 , <<"mitigate">> => act_mitigate
                  , <<"move">> => act_move
                  , <<"notify">> => act_notify
                  , <<"pause">> => act_pause

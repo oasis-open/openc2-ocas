@@ -31,16 +31,13 @@
         , init_per_suite/1
         , end_per_suite/1
         , test_allow/1
-        , test_augment/1
         , test_cancel/1
         , test_contain/1
         , test_copy/1
-        , test_delay/1
         , test_delete/1
         , test_demense/1
         , test_deny/1
         , test_detonate/1
-        , test_distill/1
         ]).
 
 %% required for common_test to work
@@ -50,16 +47,12 @@
 all() ->
     [ test_allow
     , test_allow
-    , test_augment
-    , test_augment
     , test_cancel
     , test_cancel
     , test_contain
     , test_contain
     , test_copy
     , test_copy
-    , test_delay
-    , test_delay
     , test_delete
     , test_delete
     , test_demense
@@ -68,8 +61,6 @@ all() ->
     , test_deny
     , test_detonate
     , test_detonate
-    , test_distill
-    , test_distill
     ].
 
 %% timeout if no reply in a minute
@@ -112,14 +103,6 @@ test_allow(Config) ->
                         ),
     ok.
 
-test_augment(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "augment01.json"
-                        , "augment01.results.json"
-                        , Config
-                        ),
-    ok.
-
 test_cancel(Config) ->
     %% send command and compare expected results
     helper_json:post_oc2( "cancel01.json"
@@ -140,14 +123,6 @@ test_copy(Config) ->
     %% send command and compare expected results
     helper_json:post_oc2( "copy01.json"
                         , "copy01.results.json"
-                        , Config
-                        ),
-    ok.
-
-test_delay(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "delay01.json"
-                        , "delay01.results.json"
                         , Config
                         ),
     ok.
@@ -184,12 +159,3 @@ test_detonate(Config) ->
                         , Config
                         ),
     ok.
-
-test_distill(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "distill01.json"
-                        , "distill01.results.json"
-                        , Config
-                        ),
-    ok.
-

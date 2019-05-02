@@ -32,7 +32,6 @@
         , end_per_suite/1
         , test_investigate/1
         , test_locate/1
-        , test_mitigate/1
         , test_move/1
         , test_notify/1
         , test_pause/1
@@ -54,8 +53,6 @@ all() ->
     , test_investigate
     , test_locate
     , test_locate
-    , test_mitigate
-    , test_mitigate
     , test_move
     , test_move
     , test_notify
@@ -121,14 +118,6 @@ test_locate(Config) ->
     %% send command and compare expected results
     helper_json:post_oc2( "locate01.json"
                         , "locate01.results.json"
-                        , Config
-                        ),
-    ok.
-
-test_mitigate(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "mitigate01.json"
-                        , "mitigate01.results.json"
                         , Config
                         ),
     ok.
@@ -212,4 +201,3 @@ test_resume(Config) ->
                         , Config
                         ),
     ok.
-
