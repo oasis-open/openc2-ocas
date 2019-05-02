@@ -30,14 +30,10 @@
         , suite/0
         , init_per_suite/1
         , end_per_suite/1
-        , test_save/1
         , test_scan/1
         , test_set/1
-        , test_snapshot/1
         , test_start/1
         , test_stop/1
-        , test_substitute/1
-        , test_sync/1
         , test_update/1
         ]).
 
@@ -46,22 +42,14 @@
 
 %% tests to run
 all() ->
-    [ test_save
-    , test_save
-    , test_scan
+    [ test_scan
     , test_scan
     , test_set
     , test_set
-    , test_snapshot
-    , test_snapshot
     , test_start
     , test_start
     , test_stop
     , test_stop
-    , test_substitute
-    , test_substitute
-    , test_sync
-    , test_sync
     , test_update
     , test_update
     ].
@@ -97,14 +85,6 @@ init_per_suite(Config) ->
 end_per_suite(Config) ->
     Config.
 
-test_save(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "save01.json"
-                        , "save01.results.json"
-                        , Config
-                        ),
-    ok.
-
 test_scan(Config) ->
     %% send command and compare expected results
     helper_json:post_oc2( "scan01.json"
@@ -121,14 +101,6 @@ test_set(Config) ->
                         ),
     ok.
 
-test_snapshot(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "snapshot01.json"
-                        , "snapshot01.results.json"
-                        , Config
-                        ),
-    ok.
-
 test_start(Config) ->
     %% send command and compare expected results
     helper_json:post_oc2( "start01.json"
@@ -141,22 +113,6 @@ test_stop(Config) ->
     %% send command and compare expected results
     helper_json:post_oc2( "stop01.json"
                         , "stop01.results.json"
-                        , Config
-                        ),
-    ok.
-
-test_substitute(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "substitute01.json"
-                        , "substitute01.results.json"
-                        , Config
-                        ),
-    ok.
-
-test_sync(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "sync01.json"
-                        , "sync01.results.json"
                         , Config
                         ),
     ok.
