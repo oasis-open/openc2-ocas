@@ -32,15 +32,11 @@
         , end_per_suite/1
         , test_investigate/1
         , test_locate/1
-        , test_notify/1
-        , test_pause/1
         , test_query/1
         , test_remediate/1
         , test_redirect/1
-        , test_report/1
         , test_restart/1
         , test_restore/1
-        , test_resume/1
         ]).
 
 %% required for common_test to work
@@ -52,24 +48,16 @@ all() ->
     , test_investigate
     , test_locate
     , test_locate
-    , test_notify
-    , test_notify
-    , test_pause
-    , test_pause
     , test_query
     , test_query
     , test_remediate
     , test_remediate
     , test_redirect
     , test_redirect
-    , test_report
-    , test_report
     , test_restart
     , test_restart
     , test_restore
     , test_restore
-    , test_resume
-    , test_resume
     ].
 
 %% timeout if no reply in a minute
@@ -119,22 +107,6 @@ test_locate(Config) ->
                         ),
     ok.
 
-test_notify(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "notify01.json"
-                        , "notify01.results.json"
-                        , Config
-                        ),
-    ok.
-
-test_pause(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "pause01.json"
-                        , "pause01.results.json"
-                        , Config
-                        ),
-    ok.
-
 test_query(Config) ->
     %% send command and compare expected results
     helper_json:post_oc2( "query01.json"
@@ -159,14 +131,6 @@ test_redirect(Config) ->
                         ),
     ok.
 
-test_report(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "report01.json"
-                        , "report01.results.json"
-                        , Config
-                        ),
-    ok.
-
 test_restart(Config) ->
     %% send command and compare expected results
     helper_json:post_oc2( "restart01.json"
@@ -179,14 +143,6 @@ test_restore(Config) ->
     %% send command and compare expected results
     helper_json:post_oc2( "restore01.json"
                         , "restore01.results.json"
-                        , Config
-                        ),
-    ok.
-
-test_resume(Config) ->
-    %% send command and compare expected results
-    helper_json:post_oc2( "resume01.json"
-                        , "resume01.results.json"
                         , Config
                         ),
     ok.

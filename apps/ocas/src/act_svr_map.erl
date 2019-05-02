@@ -54,23 +54,15 @@ action_map() ->
                  , <<"detonate">> => act_detonate
                  , <<"investigate">> => act_investigate
                  , <<"locate">> => act_locate
-                 , <<"notify">> => act_notify
-                 , <<"pause">> => act_pause
                  , <<"query">> => act_query
                  , <<"redirect">> => act_redirect
                  , <<"remediate">> => act_remediate
-                 , <<"report">> => act_report
                  , <<"restart">> => act_restart
                  , <<"restore">> => act_restore
-                 , <<"resume">> => act_resume
-                 , <<"save">> => act_save
                  , <<"scan">> => act_scan
                  , <<"set">> => act_set
-                 , <<"snapshot">> => act_snapshot
                  , <<"start">> => act_start
                  , <<"stop">> => act_stop
-                 , <<"substitute">> => act_substitute
-                 , <<"sync">> => act_sync
                  , <<"update">> => act_update
                  },
     ActionMap.
