@@ -54,7 +54,6 @@ action_map() ->
                  , <<"detonate">> => act_detonate
                  , <<"investigate">> => act_investigate
                  , <<"locate">> => act_locate
-                 , <<"move">> => act_move
                  , <<"notify">> => act_notify
                  , <<"pause">> => act_pause
                  , <<"query">> => act_query
