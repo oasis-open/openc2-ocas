@@ -21,9 +21,9 @@
                          , "target_keepalive"
                          , "target_server"
                          ],
-    "ExpectedJsonPairs" : { "action":        "act_mitigate"
+    "ExpectedJsonPairs" : { "action":        "act_deny"
                           , "action_keepalive": true
-                          , "action_server": "act_mitigate"
+                          , "action_server": "act_deny"
                           , "action_valid":  true
                           , "actuator_keepalive": true
                           , "actuator_server": "acu_demense_server"
@@ -38,5 +38,5 @@
                           , "target":        "hostname"
                           , "target_keepalive": true
                           , "target_server":  "tgt_hostname_server"
-                          } 
+                          }
 }

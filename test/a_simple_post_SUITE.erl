@@ -48,11 +48,11 @@
 -include_lib("common_test/include/ct.hrl").
 
 %% JSON for input tests
--include_lib("./include/mitigate01.hrl").
+-include_lib("./include/deny01.hrl").
 -include_lib("./include/nonsense_action.hrl").
 -include_lib("./include/bad_json.hrl").
 -include_lib("./include/missing_action.hrl").
--include_lib("./include/mitigate_wo_target.hrl").
+-include_lib("./include/deny02_wo_target.hrl").
 
 %% tests to run
 all() ->
@@ -132,7 +132,7 @@ test_post(_Config) ->
     {ok, Conn} = shotgun:open("localhost", MyPort),
     Headers = [ {<<"content-type">>, <<"application/json">>} ],
 
-     SomeJson = ?MITIGATE01,
+     SomeJson = ?DENY01,
 
     %% validate Json
     true = jsx:is_json(SomeJson),
@@ -459,7 +459,7 @@ test_missing_target(_Config) ->
     Headers = [ {<<"content-type">>, <<"application/json">>} ],
 
     %% give an invalid action
-    SomeJson = ?MITIGATEWOTARGET,
+    SomeJson = ?DENY02,
 
     %% validate Json
     true = jsx:is_json(SomeJson),
@@ -547,6 +547,3 @@ send_recieve( Headers          % to send
 
     %% return
     ok.
-
-
-

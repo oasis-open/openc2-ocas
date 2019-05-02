@@ -35,8 +35,8 @@
                           , "has_http_body"   : true
                           , "has_modifiers"   : true
                           , "has_target"      : true
-                          , "target"          : "device"
+                          , "target"          : "network_firewall"
                           , "target_keepalive": true
                           , "target_server"   : "tgt_network_firewall_server"
-                          } 
+                          }
 }
